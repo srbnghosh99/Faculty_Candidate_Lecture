@@ -21,8 +21,6 @@ and the two main tools for working with them:
 - **Markov chains** — random processes that evolve step by step, where the next state
   depends only on the current one (the *memoryless* property). Worked example: a
   **weather** chain (Sunny / Cloudy / Rainy) settling into a long-run **steady state**.
-- **The bridge** — combine the two and you get **Markov Chain Monte Carlo (MCMC)**,
-  the engine behind modern Bayesian inference and AI.
 
 ---
 
@@ -44,10 +42,6 @@ media/
   out_markov.gif                 Weather Markov chain settling to its steady state
   weather_markov_diagram.png     Weather state diagram with transition probabilities
 ```
-
-> Adjust the folder names above to match however you organize the repo.
-
----
 
 ## Running the code
 
@@ -98,8 +92,6 @@ Each animation loops, so it can play on the side during a talk; or use `--save` 
   exactly the same idea as the road-trip travel-time histogram.
 - **Markov chains (interactive):**
   [Setosa — Markov Chains, visually explained](https://setosa.io/ev/markov-chains/)
-- **Agent-based modeling:** [NetLogo](https://ccl.northwestern.edu/netlogo/)
-  (connects this lesson forward to CDS 205 / CDS 201)
 - **Background reading:**
   [Monte Carlo method](https://en.wikipedia.org/wiki/Monte_Carlo_method) ·
   [Markov chain](https://en.wikipedia.org/wiki/Markov_chain) ·
@@ -107,7 +99,6 @@ Each animation loops, so it can play on the side during a talk; or use `--save` 
 - **Department:**
   [GMU Computational and Data Sciences](https://catalog.gmu.edu/colleges-schools/science/computational-data-sciences/)
 
-*(Add any other links you want to share here.)*
 
 ---
 
@@ -124,9 +115,9 @@ Each animation loops, so it can play on the side during a talk; or use `--save` 
 
 ## Author
 
-*Your name — sample teaching lesson, George Mason University, Department of Computational
+*Shrabani Ghosh — sample teaching lesson, George Mason University, Department of Computational
 and Data Sciences.*
 
 ## License
 
-Released for educational use. Add a license of your choice (e.g., MIT or CC BY 4.0).
+Released for educational use.
