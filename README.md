@@ -1,5 +1,3 @@
-# Faculty_Candidate_Lecture
-
 # CDS 230 — Stochastic Models: Monte Carlo & Markov Chains
 
 A sample teaching lesson for **CDS 230 (Modeling and Simulation I)**, covering syllabus
