@@ -61,22 +61,18 @@ This period was foundational:  the project team selected a case study paper as t
 | T2. Toolkit evaluation method defined | Jul 2026 | In progress | ~60% | Multi-metric evaluation framework drafted (semantic similarity, NER, SPO/fact extraction, knowledge/causal graphs, hallucination detection). |
 | T3. Toolkit applied to case-study output | Jul 2026 | Preliminery analysis done | ~65% | Semantic-similarity and NER metrics already run against pilot AI-generated candidate papers (Versions 0–5). |
 
-*(Milestones L2/L3, C4/C5, T4/T5, P1–P3 have not yet started and are omitted above; see Level-1 plan for full list.)*
 
 ## D. Technical Accomplishments This Period
 
+- **Data collection:** Began ACLED conflict-event data download (Africa scope, 2013–present, excluding US/Canada) and Afrobarometer/fragility-barometer data; identified SAV→CSV conversion as a required preprocessing step; agreed the "synthesis before model" principle (raw structured data must be interpreted/summarized before any LLM ingestion).
+- **Web scraping / cost pipeline:** Settled on HTTrack/Python-based scraping to separate text from images before any model involvement, and a cost-reduction pipeline (free preprocessing → cheap models to validate pipeline shape → Claude/GPT only for production runs).
 - **Project architecture:** Confirmed GitHub repository structure (AIX Private → `projects/` + `tools/`); established README-for-every-directory norm; agreed raw data stays in SharePoint ("AIX Data Vault"), never in GitHub, while synthesized/structured data and documents live in GitHub.
 - **Case-study scope:** Confirmed the five-country West African case-study framework (2019–2022): Mali, Guinea, Burkina Faso (coup occurred — active cases) vs. Senegal, Ghana (no coup — stable comparison cases), for quasi-experimental validity.
-- **Alpha/validation run:** Selected "Determinants of Economic Growth in Ghana" (ARDL model, World Bank data) as Case Study Zero ("Cub") to validate the full pipeline at low risk before committing to the harder Burkina Faso corpus; plan agreed with summer RA Sabrita to redo her prior replication attempt using the correct data vintage and the project's full process.
-- **Data collection:** Began ACLED conflict-event data download (Africa scope, 2013–present, excluding US/Canada) and Afrobarometer/fragility-barometer data; identified SAV→CSV conversion as a required preprocessing step; agreed the "synthesis before model" principle (raw structured data must be interpreted/summarized before any LLM ingestion).
-- **Web scraping / cost pipeline:** Settled on HTTrack/Python-based scraping to separate text from images before any model involvement, and a cost-reduction pipeline (free preprocessing → cheap models to validate pipeline shape → Claude/GPT only for production runs), driven by real per-article cost estimates (~$5/article via API).
+- **Alpha/validation run:** Selected "African coups in the COVID-19 era: A current history" (ARDL model, World Bank data) as Case Study Zero ("Cub") to validate the full pipeline at low risk before committing to the harder Burkina Faso corpus
 - **Analytic Toolkit (Deliverable 1.2) — pilot metrics built:**
   - Semantic-similarity metric (sentence-transformer embeddings, cosine similarity, document/section/sentence level) — implemented and demoed against a pilot candidate paper ("COVID Timing 2019" replication), achieving a 79% document-level baseline similarity with no additional context provided.
   - Named-entity-recognition (NER) metric — implemented and demoed.
   - Subject-predicate-object (fact/triplet) extraction — scoped as the next metric; identified as the basis from which causal-graph comparison will be derived rather than building a separate causal extractor.
-  - Hallucination-detection approach — converged on comparing extracted facts against the original document as a grounding source (with the caveat that legitimately-introduced facts from added context are not automatically hallucinations); designed an information-availability matrix (full/partial/zero references) to isolate model capability from information-availability effects.
-- **Methodology documents:** Reviewed and iterated V7/V8 experimental-design documents; confirmed data-leakage mitigation (favor open-weight models with pre-2019 training cutoffs for the predictive-test conditions); flagged need for an 8th analytic-register type to classify the Burkina Faso source document.
-- **Reproducibility:** Noted a hyperparameter-control limitation of proprietary/commercial LLMs and proposed replicating select experiments with an open-source model (e.g., a DeepSeek-class model) on local/HPC resources for direct comparability.
 
 ## E. Status of Previously Reported Problems
 
