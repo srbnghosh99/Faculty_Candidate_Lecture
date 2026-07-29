@@ -95,11 +95,10 @@ None this period requiring sponsor notice. Internal team working sessions were h
 ## H. Plans for Next Period
 
 - Hold the formal TDAC-AC kickoff meeting with the sponsor team (July 20, 2026).
+- Biweekly meeting with the sponsor team agreed
 - Have Sabrita complete the Ghana ("Cub") replication case study end-to-end using the corrected World Bank data vintage and the project's full pipeline, as validation of the methodology before committing to the Burkina Faso corpus.
-- Continue ACLED and Afrobarometer data collection and preprocessing (SAV→CSV conversion, synthesis layer).
+- Continue OSINT database and online news collection preprocessing (SAV→CSV conversion, synthesis layer).
 - Build the subject-predicate-object (fact/triplet) extraction metric and derive the causal-graph comparison from it.
-- Run the information-availability matrix experiment (full/partial/zero external references) to isolate hallucination causes from model capability.
-- Define the 8th analytic-register type needed to classify the Burkina Faso seed document.
 - Resolve open administrative items: TDAC billing-account transition and the grad-student budget-line restriction.
 - Audit the original task-order proposal against current work to confirm no sponsor deliverable commitments (including monthly reporting) are being missed.
 
