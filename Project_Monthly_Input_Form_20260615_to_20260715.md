@@ -4,17 +4,14 @@ form_reference: DI-MGMT-80368A
 project_title: "Development of Analytical Capabilities for Information Campaign Assessment (TDAC-AC)"
 project_short_name: TDAC-AC
 project_lead: "Steven Schneider (PI), SUNY Polytechnic Institute"
-co_investigators:
-  - "Gene Kim (PI), University of South Florida — sociocultural worldviews, disinformation"
 team_members:
   - "William Thistleton, SUNY Poly"
   - "Asela Abeya, SUNY Poly"
+  - "Shrabani Ghosh, SUNY Poly"
 sponsor_poc: "Peter J. Grazaitis (DEVCOM/DAC)"
 reporting_period:
   start: 2026-06-15
   end: 2026-07-15
-phone: "TBD — fill in before submission"
-email: "TBD — fill in before submission"
 date_submitted: 2026-07-29
 source_note: >
   Drafted from repository meeting records and project-planning documents in
@@ -40,14 +37,13 @@ source_note: >
 | Project Title | Development of Analytical Capabilities for Information Campaign Assessment (TDAC-AC) |
 | Project Lead | Steven Schneider (PI), SUNY Polytechnic Institute |
 | Reporting Period | June 15, 2026 – July 15, 2026 |
-| Phone / Email | *TBD — fill in before submission* |
 | Date Submitted | July 29, 2026 |
 
 ## B. Project Summary
 
 This project develops and evaluates AI/LLM-assisted analytical capabilities for intelligence-style reporting on socio-cultural instability and information campaigns. The core research question is whether an AI-generated analytic product — given the same temporally bounded open-source information environment as a human analyst — can produce a reliable expert outcome comparable to a human analyst's output, and under what conditions (model choice, information delivery method, analytical framework) that fidelity is highest.
 
-This period was foundational: the team stood up the GitHub-based project architecture, confirmed the five-country case-study scope (Mali, Guinea, Burkina Faso as coup cases; Senegal, Ghana as stable comparisons) and the human-vs-AI quasi-experimental design, began OSINT corpus collection (ACLED conflict-event data, Afrobarometer/fragility survey data), and built out the first working pieces of the analytic evaluation toolkit — a semantic-similarity metric and a named-entity-recognition metric — tested against a pilot paper-replication pipeline. No major blocking problems arose; the main open items are administrative (billing-account transition, student-hiring budget line) rather than technical.
+This period was foundational:  the project team selected a case study paper as the target for analysis and completed collection of the associated data. The task was defined as a comparison of AI-generated versus human-generated papers, using three evaluation methods: semantic similarity, named entity extraction, and causal relation extraction. Initial groundwork for the comparison pipeline is in place, and analysis is done using these three methods next period. No major problems were encountered this period.
 
 ## C. Schedule and Milestone Status
 
@@ -55,15 +51,15 @@ This period was foundational: the team stood up the GitHub-based project archite
 
 | Milestone / Task | Planned Date | Forecast / Actual Date | % Complete | Remarks |
 |---|---|---|---|---|
-| A1. Kickoff meeting with TDAC team completed | Jul 2026 | Scheduled Jul 20, 2026 | 0% | Not yet held as of period close; internal team working sessions (Jun 16, Jun 17, Jul 13) substituted in the interim. |
-| A2. Project plan document agreed | Jun–Jul 2026 | In progress | ~60% | Multiple project-plan and task-schedule drafts (v6–v8) produced; not yet formally signed off. |
+| A1. Kickoff meeting with TDAC team completed | Jul 2026 | Scheduled Jul 20, 2026 |100% | Completed |
+| A2. Project plan document agreed and candidate paper selction process | Jun–Jul 2026 | In progress | ~60% | Multiple project-plan   |
 | L1. Literature-review process calibrated | Jul–Aug 2026 | In progress | ~20% | Reference-management workflow (Zotero categorization/filtering) defined; not yet run at scale. |
-| C1. Replication case-study design agreed | Jun–Jul 2026 | In progress | ~70% | Five-country scope, quasi-experimental (human-control vs. AI-treatment) design, and data-leakage mitigation strategy confirmed. |
+| C1. Replication case-study design agreed | Jun–Jul 2026 | In progress | ~70% | task-schedule drafts (v0–v3) produced |
 | C2. Human-produced analytic artifact selected | Jun–Jul 2026 | Substantially complete | ~80% | Ghana economic-growth paper selected as Case Study Zero ("Cub"); Burkina Faso seed paper selected as the primary coup case; a COVID-timing paper used as a separate pilot for toolkit development. |
-| C3. Context and method specified | Jul–Aug 2026 | In progress | ~40% | V7/V8 methods documents define quasi-experimental framework; an 8th "analytic register" type still needs defining to cover the Burkina Faso source document. |
-| T1. Toolkit input structure defined | Jul 2026 | In progress | ~50% | PDF-vs-Markdown input debate resolved in favor of isolating the conversion step; not yet formally documented as a spec. |
-| T2. Toolkit evaluation method defined | Jul 2026 | In progress | ~40% | Multi-metric evaluation framework drafted (semantic similarity, NER, SPO/fact extraction, knowledge/causal graphs, hallucination detection). |
-| T3. Toolkit applied to case-study output | Aug 2026 | Started early | ~15% | Semantic-similarity and NER metrics already run against pilot AI-generated candidate papers (Versions 0–5). |
+| C3. Context and method specified | Jul–Aug 2026 | In progress | ~40% |  |
+| T1. Toolkit input structure defined | Jul 2026 | In progress | ~50% | PDF-vs-Markdown conversion |
+| T2. Toolkit evaluation method defined | Jul 2026 | In progress | ~60% | Multi-metric evaluation framework drafted (semantic similarity, NER, SPO/fact extraction, knowledge/causal graphs, hallucination detection). |
+| T3. Toolkit applied to case-study output | Jul 2026 | Preliminery analysis done | ~65% | Semantic-similarity and NER metrics already run against pilot AI-generated candidate papers (Versions 0–5). |
 
 *(Milestones L2/L3, C4/C5, T4/T5, P1–P3 have not yet started and are omitted above; see Level-1 plan for full list.)*
 
